@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="mh.svg" type="image/x-icon">
+    <script src="script.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap');
+        </style>
+</head>
+<body>
+
+<section id="showImage">
+        <img id="imageToShow" src="" alt="Ogladany obraz">
+        <button onclick="hideImage()"><img src="x.png" alt="x"></button>
+    </section>
+
+    <section id="main">
+       <!-- <header>
+            <img src="logo_to.svg" alt="imienazwisko">
+        </header> -->
+        <section id="worksContainer">
+            <section id="stronaGlowna">
+                <div>
+                    <h1><img src="logo_to.svg" alt="imienazwisko"></h1>
+                    <p></p>
+                </div>
+            </section>
+            <section id="E-commerce">
+                <div>
+                    <h1>e-commerce</h1>
+                    <p>
+                        Chętnie zaprojektuję różnorodne materiały reklamowe, obrobię zdjęcia produktów, czy nawet stworzę projekty opakowań od zera. 
+                    </p>
+                </div>
+                <div class="work" ><img onclick="showImage(this.src)" src="menu/e-commerce/to.png"></div>
+            </section>
+            <section id="Ilustracje">
+                <div>
+                    <h1>ILUSTRACJE</h1>
+                    <p>
+                        W tej sekcji prezentuję różnorodne prace – od cyfrowych ilustracji po ręcznie rysowane obrazy. 
+                    </p>
+                </div>
+            </section>
+            <section id="IdentyfikacjaWizualna">
+                <div>
+                    <h1>Identyfikacja wizualna marki</h1>
+                    <p>Tworzę spójne i przyciągające wzrok projekty, które skutecznie reprezentują marki i budują ich rozpoznawalność. W tej kategorii znajdziesz projekty identyfikacji wizualnej, palety kolorów, typografię, oraz materiały promocyjne</p>
+                </div>
+            </section>
+            <section id="Logo">
+                <div>
+                    <h1>logo</h1>
+                    <p>to kluczowy element identyfikacji wizualnej marki. W tej sekcji przedstawiam moje projekty logotypów, które skutecznie komunikują wartości marki</p>
+                </div>
+                <div  class="work" ><img  onclick="showImage(this.src)" src="menu/Logo/DETAL 3D 1.png"></div>
+                <div  class="work" ><img  onclick="showImage(this.src)" src="menu/Logo/DETAL 3D 2.png"></div>
+                <div  class="work" ><img  onclick="showImage(this.src)" src="menu/Logo/manu 1.png"></div>
+                <div  class="work" ><img onclick="showImage(this.src)" src="menu/Logo/manu 2.png"></div>
+                <div  class="work" ><img onclick="showImage(this.src)" src="menu/Logo/Manufaktura chleba.png"></div>
+                <div  class="work" ><img onclick="showImage(this.src)" src="menu/Logo/OAZIS 1.png"></div>
+                <div  class="work" ><img onclick="showImage(this.src)" src="menu/Logo/OAZIS 2.png"></div>
+                <div  class="work" ><img onclick="showImage(this.src)" src="menu/Logo/POPO.jpg"></div>
+                <div  class="work" ><img onclick="showImage(this.src)" src="menu/Logo/Rose Angels 1.png"></div>
+                <div  class="work" ><img onclick="showImage(this.src)" src="menu/Logo/Rose angels 2.png"></div>
+            </section>
+            <section id="MojePrace">
+                <div>
+                    <h1>moje prace</h1>
+                    <p>To kategoria, w której prezentuję różnorodne projekty, nad którymi pracowałam. Przedstawione prace są wykonane w moim stylu</p>
+                </div>
+            </section>
+            <section id="projekty3D">
+                <div>
+                    <h1>Projekty 3D </h1>
+                    <p>W tej kategorii przedstawiam moje prace przedstawiające trójwymiarowe obiekty oraz sceny. </p>
+                </div>
+            </section>
+            <section id="projektyPostaci">
+                <div>
+                    <h1>Projekty postaci</h1>
+                    <p>W tej sekcji znajdują się moje projekty postaci, od szkiców koncepcyjnych po dopracowane ilustracje i modele 3D</p>
+                </div>
+                <div class="work" ><img onclick="showImage(this.src)" src="menu/Projekty postaci/jabko to33.jpg"></div>
+            </section>
+            <section id="projektyUbran">
+                <div>
+                    <h1>Projekty ubrań</h1>
+                    <p>W tej kategorii prezentuję moje projekty ubrań - mockupy, szkice, modele 3d, dopracowane projekty i wiele więcej</p>
+                </div>
+                <div class="work" ><img onclick="showImage(this.src)" src="menu/Projekty ubrań/aaaa.png"></div>
+                <div class="work" ><img onclick="showImage(this.src)" src="menu/Projekty ubrań/aaaaaaa.png"></div>
+                <div class="work" ><img onclick="showImage(this.src)" src="menu/Projekty ubrań/koszulk 2.png"></div>
+                <div class="work" ><img onclick="showImage(this.src)" src="menu/Projekty ubrań/koszulk.png"></div>
+            </section>
+            <section id="Rysunki">
+                <div>
+                    <h1>rysunki</h1>
+                    <p>W tej sekcji dzielę się swoimi spontanicznymi szkicami i rysunkami. To przestrzeń, gdzie prezentuję moje ćwiczenia i codzienne inspiracje</p>
+                </div>
+                <div class="work" ><img onclick="showImage(this.src)" src="menu/Rysunki/dłoń 2 kopia.png"></div>
+                <div class="work" ><img onclick="showImage(this.src)" src="menu/Rysunki/IMG20230912231031.jpg"></div>
+                <div class="work" ><img onclick="showImage(this.src)" src="menu/Rysunki/oink1113333333.jpg"></div>
+                <div class="work" ><img onclick="showImage(this.src)" src="menu/Rysunki/portrait stydy 3 male 1st rrrgafsrd adfaf.jpg"></div>
+            </section>
+        </section>
+        <footer>
+            Strona przygotowana przez: Łysy gej
+        </footer>
+
+    </section>
+    
+    <aside>
+        <img id="logoStrony" src="moje_port._to.svg" alt="logo strony">
+        <nav>
+            <ul style="padding-left: 20px;">
+                <li onclick="category('stronaGlowna')">Strona główna</li>
+                <li onclick="category('E-commerce')">E-commerce</li>
+                <li onclick="category('Ilustracje')">Ilustracje</li>
+                <li onclick="category('IdentyfikacjaWizualna')">Identyfikacja wizualna</li>
+                <li onclick="category('Logo')">Logo</li>
+                <li onclick="category('MojePrace')">Moje prace</li>
+                <li onclick="category('projekty3D')">projeky 3D</li>
+                <li onclick="category('projektyPostaci')">Projekty postaci</li>
+                <li onclick="category('projektyUbran')">Projekty ubrań</li>
+                <li onclick="category('Rysunki')">Rysunki</li>
+            </ul>
+        </nav>
+    </aside>
+</body>
+</html>

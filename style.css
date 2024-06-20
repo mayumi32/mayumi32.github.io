@@ -1,0 +1,195 @@
+*
+{
+    font-family: verdana;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+#main
+{
+    width:81vw;
+    height: 100vh;
+    right: 0;
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 1;
+
+}
+#worksContainer
+{
+    min-height: 30%;
+}
+aside
+{
+    width:calc(18vw);
+    min-height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-right: 2px solid white;
+}
+header
+{
+    text-align: center;
+}
+header img
+{
+    width: 50%;
+    padding-bottom: 5vh;
+}
+#napis
+{
+    position: fixed;
+    left: 300px;
+}
+h1
+{
+    font-size: 300%;
+}
+@font-face {
+    font-family: PearlFont;
+    src: url("tan-pearl.otf") format("opentype");
+}
+.frank-ruhl-libre-frankFont {
+    font-family: "Frank Ruhl Libre", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+
+li
+{
+    list-style: none;
+    margin-right: 20px;
+    padding: 0.5vw;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+    font-size:2.5vh;
+}
+li:hover
+{
+    transition: 500ms;
+    border-bottom: 2px solid white;
+}
+footer
+{
+    border-top: 2px solid white;
+    padding: 30px;
+    clear: both;
+}
+#logoStrony
+{
+    margin: 10%;
+    margin-bottom: 20%;
+    
+}
+.work
+{
+    width: 33%;
+    height: 25vw;
+    margin: auto;
+    margin-bottom: 1vw;
+    display: block;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.work img
+{
+    width: 90%;
+    height: 90%;
+    margin: 5vh;
+    border-radius: 5%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.work img:hover 
+{
+    transition: 200ms;
+    transform: scale(1.1);
+}
+#showImage
+{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(30, 30, 30, 0.4);
+}
+#showImage>img
+{    
+    height: 80%;
+    max-width: 90%;
+    box-shadow: 0px 0px 600px rgb(90, 90, 90);
+}
+#showImage button
+{
+    background:none;
+    border: 0px;
+    width: 2vw;
+    position: relative;
+    bottom: 43%;
+    left: 1%;
+}
+#showImage button img
+{
+    background:none;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    filter: invert(1);
+}
+#showImage button img:hover
+{
+    transition: 200ms;
+    transform: scale(1.05);
+}
+#worksContainer>section
+{
+    display: none;
+}
+div>h1
+{
+    font-size: 7vh;
+    font-family: PearlFont;
+    font-weight: 300;
+    text-transform: uppercase;
+    max-width: 80%;
+    margin: auto;
+    padding-top: 5vh;
+}
+div>h1>img
+{
+    height: 20vh;
+}
+div>p
+{
+    font-family: frankFont;
+    padding: 5vh;
+    font-size: 120%;
+}
+div>p::first-letter
+{
+    font-size: 100%;
+    text-transform: uppercase;
+    
+}
+#worksContainer>section>div
+{
+    text-align: center;
+}
+
+#stronaGlowna
+{
+    display: block;
+}
