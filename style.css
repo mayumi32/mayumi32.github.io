@@ -9,7 +9,7 @@
 }
 #main
 {
-    width:81vw;
+    width:81.5vw;
     height: 100vh;
     right: 0;
     position: fixed;
@@ -29,7 +29,8 @@ aside
     position: fixed;
     left: 0;
     top: 0;
-    border-right: 2px solid white;
+    border-right: 2px solid rgb(90, 90, 90);
+    z-index: 1;
 }
 header
 {
@@ -38,7 +39,7 @@ header
 header img
 {
     width: 50%;
-    padding-bottom: 5vh;
+    padding: 5vh;
 }
 #napis
 {
@@ -77,22 +78,20 @@ li:hover
 }
 footer
 {
-    border-top: 2px solid white;
+    border-top: 2px solid rgb(90, 90, 90);
     padding: 30px;
     clear: both;
 }
 #logoStrony
 {
-    margin: 10%;
-    margin-bottom: 20%;
+    margin: 5vh;
     
 }
 .work
 {
-    width: 33%;
-    height: 25vw;
-    margin: auto;
-    margin-bottom: 1vw;
+    width: 18vw;
+    height: 18vw;
+    margin: 1vw;
     display: block;
     float: left;
     display: flex;
@@ -104,7 +103,6 @@ footer
 {
     width: 90%;
     height: 90%;
-    margin: 5vh;
     border-radius: 5%;
     object-fit: cover;
     cursor: pointer;
@@ -174,9 +172,9 @@ div>h1>img
 }
 div>p
 {
-    font-family: frankFont;
+    font-family: verdana;
     padding: 5vh;
-    font-size: 120%;
+    font-size: 2.5vh;
 }
 div>p::first-letter
 {
@@ -188,8 +186,97 @@ div>p::first-letter
 {
     text-align: center;
 }
-
-#stronaGlowna
+#stronaGlowna h1
 {
-    display: block;
+    padding: 5vh; 
+    width: 40%; 
+    float: left; 
+    padding-top: 2%;
+}
+#stronaGlowna p
+{
+    width: 35%;
+     text-align: left;
+      float: left;
+      font-size:2.5vh;  
+}
+#menuIcon
+{
+    display: none;
+}
+@keyframes showMenu {
+    from {left: -100%;}
+    to {left:0%;}
+}
+@keyframes hideMenu {
+    from {left: 0%;}
+    to {left:-100%;}
+}
+@media only screen and (max-width:800px) {
+    
+    aside
+    {
+        display: none;
+        width: 80%;
+        
+    } 
+    #main
+    {
+        width: 100%;
+    }
+    #stronaGlowna h1
+    { 
+    width: 100% ;
+    text-align: center;
+    float: none;
+    padding: 0;
+
+    }
+    #stronaGlowna p
+    {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    font-size:2vh !important; 
+       
+    }
+    div>p
+    {
+        font-size:2vh !important; 
+    }
+    #menuIcon
+    {
+        font-size: 50px;
+        z-index: 30;
+        cursor: pointer;
+        position: fixed;
+        display: block;
+        top: 10px;
+        left: 10px;
+        background-color: rgba(0, 0, 0, 0);
+
+    }
+    .work
+    {
+        width: 47.5vw;
+        height: 47.5vw;
+    }
+    h1
+    {
+        font-size: 4vh !important;
+        padding-top: 60px !important; 
+    }
+    #main h1 img
+    {
+       margin: auto;
+       height: auto;
+    }
+    #showImage>img
+{    
+    height: auto;
+    max-height: 90%;
+    width: auto;
+    width: 80%;
+    box-shadow: 0px 0px 600px rgb(90, 90, 90);
+}
 }

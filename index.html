@@ -7,33 +7,44 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="mh.svg" type="image/x-icon">
     <script src="script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap');
+        
         </style>
 </head>
 <body>
 
-<section id="showImage">
+    <section id="showImage" onclick="hideImage()" style="cursor: pointer;">
         <img id="imageToShow" src="" alt="Ogladany obraz">
-        <button onclick="hideImage()"><img src="x.png" alt="x"></button>
+        <!--<button onclick="hideImage()"><img src="x.png" alt="x"></button> -->
     </section>
+        <span id="menuIcon" onclick="showMenu()" class="material-symbols-outlined">
+        menu
+        </span>
 
     <section id="main">
        <!-- <header>
             <img src="logo_to.svg" alt="imienazwisko">
         </header> -->
         <section id="worksContainer">
-            <section id="stronaGlowna">
-                <div>
-                    <h1><img src="logo_to.svg" alt="imienazwisko"></h1>
-                    <p></p>
+            <section id="stronaGlowna" style="display: block;">
+                <div style="padding-top: 20px; " >
+                    <h1 style="margin-right: auto;"><img src="logo_to.svg" alt="imienazwisko"></h1>
+                    <p>
+                        
+                    numer kontaktowy: 506&nbsp;696&nbsp;434 <br>
+                    adres e-mail: <a style="font-size: 2vh;" href="mailto:: art.commissionsmayumi@gmail.com ">art.commissionsmayumi@gmail.com</a>  <br>
+                    <a href="https://www.facebook.com/matylda.hampelska" ><img style="width: 6vh; height: 6vh; padding: 1rem;" src="fbIcon.webp" alt="facebook"></a>
+                    <a href="https://www.instagram.com/ma.yumi_art/" ><img style="width: 6vh; height: 6vh; padding: 1rem;" src="igIcon.webp" alt="facebook"></a>
+                    </p>
                 </div>
             </section>
             <section id="E-commerce">
                 <div>
                     <h1>e-commerce</h1>
                     <p>
-                        Chętnie zaprojektuję różnorodne materiały reklamowe, obrobię zdjęcia produktów, czy nawet stworzę projekty opakowań od zera. 
+                        W tej kategorii znajdują się materiały reklamowe, obrobione zdjęcia produktów i projekty opakowań od zera. 
                     </p>
                 </div>
                 <div class="work" ><img onclick="showImage(this.src)" src="menu/e-commerce/to.png"></div>
@@ -42,17 +53,27 @@
                 <div>
                     <h1>ILUSTRACJE</h1>
                     <p>
-                        W tej sekcji prezentuję różnorodne prace – od cyfrowych ilustracji po ręcznie rysowane obrazy. 
+                        W tej sekcji znajdują się różnorodne ilustracje w wielu stylach – projekty nad którymi pracowałam i moje prywatne prace.
                     </p>
                 </div>
             </section>
             <section id="IdentyfikacjaWizualna">
                 <div>
-                    <h1>Identyfikacja wizualna marki</h1>
-                    <p>Tworzę spójne i przyciągające wzrok projekty, które skutecznie reprezentują marki i budują ich rozpoznawalność. W tej kategorii znajdziesz projekty identyfikacji wizualnej, palety kolorów, typografię, oraz materiały promocyjne</p>
+                    <h1>identyfikacja wizualna</h1>
+                    <p>W tej kategorii znajdziesz projekty identyfikacji wizualnej, w tym logotypy, palety kolorów, typografię oraz materiały promocyjne.</p>
+                    <div  class="work" ><img  onclick="showImage(this.src)" src="menu/Logo/DETAL 3D 1.png"></div>
+                    <div  class="work" ><img  onclick="showImage(this.src)" src="menu/Logo/DETAL 3D 2.png"></div>
+                    <div  class="work" ><img  onclick="showImage(this.src)" src="menu/Logo/manu 1.png"></div>
+                    <div  class="work" ><img onclick="showImage(this.src)" src="menu/Logo/manu 2.png"></div>
+                    <div  class="work" ><img onclick="showImage(this.src)" src="menu/Logo/Manufaktura chleba.png"></div>
+                    <div  class="work" ><img onclick="showImage(this.src)" src="menu/Logo/OAZIS 1.png"></div>
+                    <div  class="work" ><img onclick="showImage(this.src)" src="menu/Logo/OAZIS 2.png"></div>
+                    <div  class="work" ><img onclick="showImage(this.src)" src="menu/Logo/POPO.jpg"></div>
+                    <div  class="work" ><img onclick="showImage(this.src)" src="menu/Logo/Rose Angels 1.png"></div>
+                    <div  class="work" ><img onclick="showImage(this.src)" src="menu/Logo/Rose angels 2.png"></div>
                 </div>
             </section>
-            <section id="Logo">
+           <!-- <section id="Logo">
                 <div>
                     <h1>logo</h1>
                     <p>to kluczowy element identyfikacji wizualnej marki. W tej sekcji przedstawiam moje projekty logotypów, które skutecznie komunikują wartości marki</p>
@@ -67,11 +88,11 @@
                 <div  class="work" ><img onclick="showImage(this.src)" src="menu/Logo/POPO.jpg"></div>
                 <div  class="work" ><img onclick="showImage(this.src)" src="menu/Logo/Rose Angels 1.png"></div>
                 <div  class="work" ><img onclick="showImage(this.src)" src="menu/Logo/Rose angels 2.png"></div>
-            </section>
+            </section>-->
             <section id="MojePrace">
                 <div>
                     <h1>moje prace</h1>
-                    <p>To kategoria, w której prezentuję różnorodne projekty, nad którymi pracowałam. Przedstawione prace są wykonane w moim stylu</p>
+                    <p>To kategoria, w której prezentuję różnorodne projekty, nad którymi pracowałam. Przedstawione prace wykonane w są moim stylu.</p>
                 </div>
             </section>
             <section id="projekty3D">
@@ -83,14 +104,14 @@
             <section id="projektyPostaci">
                 <div>
                     <h1>Projekty postaci</h1>
-                    <p>W tej sekcji znajdują się moje projekty postaci, od szkiców koncepcyjnych po dopracowane ilustracje i modele 3D</p>
+                    <p>W tej sekcji znajdują się moje projekty postaci, od szkiców koncepcyjnych po dopracowane ilustracje i modele 3D.</p>
                 </div>
                 <div class="work" ><img onclick="showImage(this.src)" src="menu/Projekty postaci/jabko to33.jpg"></div>
             </section>
             <section id="projektyUbran">
                 <div>
                     <h1>Projekty ubrań</h1>
-                    <p>W tej kategorii prezentuję moje projekty ubrań - mockupy, szkice, modele 3d, dopracowane projekty i wiele więcej</p>
+                    <p>W tej kategorii prezentuję moje projekty ubrań - mockupy, szkice, modele 3d, dopracowane projekty i wiele więcej.</p>
                 </div>
                 <div class="work" ><img onclick="showImage(this.src)" src="menu/Projekty ubrań/aaaa.png"></div>
                 <div class="work" ><img onclick="showImage(this.src)" src="menu/Projekty ubrań/aaaaaaa.png"></div>
@@ -99,8 +120,8 @@
             </section>
             <section id="Rysunki">
                 <div>
-                    <h1>rysunki</h1>
-                    <p>W tej sekcji dzielę się swoimi spontanicznymi szkicami i rysunkami. To przestrzeń, gdzie prezentuję moje ćwiczenia i codzienne inspiracje</p>
+                    <h1>Rysunki</h1>
+                    <p>W tej sekcji dzielę się swoimi spontanicznymi szkicami i rysunkami. To przestrzeń, gdzie prezentuję moje ćwiczenia i codzienne inspiracje.</p>
                 </div>
                 <div class="work" ><img onclick="showImage(this.src)" src="menu/Rysunki/dłoń 2 kopia.png"></div>
                 <div class="work" ><img onclick="showImage(this.src)" src="menu/Rysunki/IMG20230912231031.jpg"></div>
@@ -109,12 +130,12 @@
             </section>
         </section>
         <footer>
-            Strona przygotowana przez: Łysy gej
+            Strona przygotowana przez: <a href="https://www.facebook.com/GaboonOlsz" target="_blank">Gabriel Olszewski</a>
         </footer>
 
     </section>
     
-    <aside>
+    <aside id="menu">
         <img id="logoStrony" src="moje_port._to.svg" alt="logo strony">
         <nav>
             <ul style="padding-left: 20px;">
@@ -122,9 +143,9 @@
                 <li onclick="category('E-commerce')">E-commerce</li>
                 <li onclick="category('Ilustracje')">Ilustracje</li>
                 <li onclick="category('IdentyfikacjaWizualna')">Identyfikacja wizualna</li>
-                <li onclick="category('Logo')">Logo</li>
+               <!-- <li onclick="category('Logo')">Logo</li>-->
                 <li onclick="category('MojePrace')">Moje prace</li>
-                <li onclick="category('projekty3D')">projeky 3D</li>
+                <li onclick="category('projekty3D')">projekty 3D</li>
                 <li onclick="category('projektyPostaci')">Projekty postaci</li>
                 <li onclick="category('projektyUbran')">Projekty ubrań</li>
                 <li onclick="category('Rysunki')">Rysunki</li>
